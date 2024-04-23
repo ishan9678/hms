@@ -42,6 +42,7 @@
 		86A6B33E2BD7A8BB005DC851 /* DoctorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */; };
 		86A6B3402BD7A8DB005DC851 /* PatientHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */; };
 		8E7730772BD6BFC800EE1DA2 /* DateCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */; };
+		8E7730852BD7C95800EE1DA2 /* PrescriptionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7730842BD7C95800EE1DA2 /* PrescriptionForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListView.swift; sourceTree = "<group>"; };
 		86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeView.swift; sourceTree = "<group>"; };
 		8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalendarView.swift; sourceTree = "<group>"; };
+		8E7730842BD7C95800EE1DA2 /* PrescriptionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				86A6B2EB2BD63BC8005DC851 /* ContentView.swift */,
 				8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */,
+				8E7730842BD7C95800EE1DA2 /* PrescriptionForm.swift */,
 				86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */,
 				86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */,
 			);
@@ -275,6 +278,7 @@
 				86A6B2EA2BD63BC8005DC851 /* hmsApp.swift in Sources */,
 				86A6B3402BD7A8DB005DC851 /* PatientHomeView.swift in Sources */,
 				86A6B3352BD63DAD005DC851 /* DoctorsViewModel.swift in Sources */,
+				8E7730852BD7C95800EE1DA2 /* PrescriptionForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
