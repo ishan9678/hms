@@ -1,18 +1,58 @@
 //
-//  DoctorListView.swift
-//  hms
+//  DoctorCardList.swift
+//  HMS-Team 5
 //
-//  Created by Ishan on 23/04/24.
+//  Created by Ishan on 22/04/24.
 //
 
 import SwiftUI
 
-struct DoctorListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct DoctorCardList: View {
+    @ObservedObject var doctorsViewModel = DoctorsViewModel()
 
-#Preview {
-    DoctorListView()
+    var body: some View {
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 20) {
+                    ForEach(doctorsViewModel.doctors, id: \.id) { doctor in
+                        VStack(alignment: .leading) {
+                            AsyncImage(url: URL(string: doctor.image)) { phase in
+                                switch phase {
+                                case .empty:
+                                    ProgressView()
+                                case .success(let image):
+                                    image
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 130, height: 130)
+                                        .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
+                                    Text(doctor.name)
+                                        .font(.headline)
+                                    Text(doctor.department)
+                                        .font(.subheadline)
+                                case .failure:
+                                    Image(systemName: "person.fill")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                @unknown default:
+                                    EmptyView()
+                                }
+                            }
+                        }
+                        .padding(.vertical)
+                    }
+                }
+                .padding(.horizontal)
+            }
+            .onAppear {
+                doctorsViewModel.fetchDoctors()
+                print(doctorsViewModel.fetchDoctors())
+            }
+        }
+    }
+
+
+struct DoctorCardList_Previews: PreviewProvider {
+    static var previews: some View {
+        DoctorCardList()
+    }
 }
