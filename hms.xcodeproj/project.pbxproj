@@ -39,8 +39,8 @@
 		86A6B3312BD63D36005DC851 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86A6B3302BD63D36005DC851 /* GoogleService-Info.plist */; };
 		86A6B3332BD63D7B005DC851 /* Doctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B3322BD63D7B005DC851 /* Doctors.swift */; };
 		86A6B3352BD63DAD005DC851 /* DoctorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B3342BD63DAD005DC851 /* DoctorsViewModel.swift */; };
-		86A6B3382BD63DD1005DC851 /* DoctorCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B3362BD63DD1005DC851 /* DoctorCardList.swift */; };
-		86A6B3392BD63DD1005DC851 /* PatientHomeVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B3372BD63DD1005DC851 /* PatientHomeVIew.swift */; };
+		86A6B33E2BD7A8BB005DC851 /* DoctorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */; };
+		86A6B3402BD7A8DB005DC851 /* PatientHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */; };
 		8E7730772BD6BFC800EE1DA2 /* DateCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		86A6B3302BD63D36005DC851 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86A6B3322BD63D7B005DC851 /* Doctors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctors.swift; sourceTree = "<group>"; };
 		86A6B3342BD63DAD005DC851 /* DoctorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorsViewModel.swift; sourceTree = "<group>"; };
-		86A6B3362BD63DD1005DC851 /* DoctorCardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorCardList.swift; sourceTree = "<group>"; };
-		86A6B3372BD63DD1005DC851 /* PatientHomeVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientHomeVIew.swift; sourceTree = "<group>"; };
+		86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListView.swift; sourceTree = "<group>"; };
+		86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeView.swift; sourceTree = "<group>"; };
 		8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +135,8 @@
 			children = (
 				86A6B2EB2BD63BC8005DC851 /* ContentView.swift */,
 				8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */,
-				86A6B3362BD63DD1005DC851 /* DoctorCardList.swift */,
-				86A6B3372BD63DD1005DC851 /* PatientHomeVIew.swift */,
+				86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */,
+				86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,13 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A6B3382BD63DD1005DC851 /* DoctorCardList.swift in Sources */,
 				8E7730772BD6BFC800EE1DA2 /* DateCalendarView.swift in Sources */,
+				86A6B33E2BD7A8BB005DC851 /* DoctorListView.swift in Sources */,
 				86A6B2EC2BD63BC8005DC851 /* ContentView.swift in Sources */,
 				86A6B3332BD63D7B005DC851 /* Doctors.swift in Sources */,
 				86A6B2EA2BD63BC8005DC851 /* hmsApp.swift in Sources */,
+				86A6B3402BD7A8DB005DC851 /* PatientHomeView.swift in Sources */,
 				86A6B3352BD63DAD005DC851 /* DoctorsViewModel.swift in Sources */,
-				86A6B3392BD63DD1005DC851 /* PatientHomeVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
