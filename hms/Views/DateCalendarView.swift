@@ -17,18 +17,18 @@ let booking : Booking = Booking()
 struct DateCalendarView: View {
     
     //    #A1A8B0
-    @State var dayColor:Color = Color(red: 161/255, green: 168/255, blue: 176/255)
+    @State private var dayColor:Color = Color(red: 161/255, green: 168/255, blue: 176/255)
     //     #101623
-    @State var dateColor:Color = Color(red: 16/255, green: 22/255, blue: 35/255)
+    @State private var dateColor:Color = Color(red: 16/255, green: 22/255, blue: 35/255)
     
     func dateGetter(index : Int) -> Date{
         return Calendar.current.date(byAdding: .day, value: index, to: Date())!
     }
-    @State var bgColor:Color = Color(red: 242/255, green: 242/255, blue: 242/255)
-    @State var symptomsColor:Color = Color(red: 157/255, green: 159/255, blue: 159/255)
-    @State var timeArray:[String] = ["10:00","10:30","11:00","11:30","12:00","5:00","5:30","6:00","6:30","7:00"]
+    @State private var bgColor:Color = Color(red: 242/255, green: 242/255, blue: 242/255)
+    @State private var symptomsColor:Color = Color(red: 157/255, green: 159/255, blue: 159/255)
+    @State private var timeArray:[String] = ["10:00","10:30","11:00","11:30","12:00","5:00","5:30","6:00","6:30","7:00"]
     
-    @State var headingColor:Color = Color(red: 28/255, green: 28/255, blue: 28/255)
+    @State private var headingColor:Color = Color(red: 28/255, green: 28/255, blue: 28/255)
     
     
     
@@ -123,3 +123,6 @@ struct DateCalendarView: View {
     }
 }
 
+#Preview {
+    DateCalendarView()
+}
