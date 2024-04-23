@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DoctorCardList: View {
     @ObservedObject var doctorsViewModel = DoctorsViewModel()
-
+    
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack(spacing: 20) {
@@ -51,6 +51,7 @@ struct DoctorCardList: View {
             .padding(.horizontal)
         }
         .onAppear {
+            
             doctorsViewModel.fetchDoctors()
         }
     }
@@ -58,6 +59,9 @@ struct DoctorCardList: View {
 
 struct DoctorCardList_Previews: PreviewProvider {
     static var previews: some View {
-        DoctorCardList()
+        VStack{
+            DoctorCardList()
+        }
+      
     }
 }
