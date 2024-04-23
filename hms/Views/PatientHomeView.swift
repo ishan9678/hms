@@ -20,17 +20,18 @@ struct PatientHomeView: View {
                     
                     VStack{
                         
-                        Text("Good Morning Nancy")
+                        Text("Good Morning, Nancy")
                             .foregroundStyle(Color.white)
                             .font(.system(size: 20))
                             .opacity(0.8)
+                            .padding(.trailing, 25)
                         
                         Text("Welcome Back")
                             .foregroundStyle(Color.white)
                             .font(.system(size: 32))
                             .bold()
                     }
-                    .padding(.trailing, 100)
+                    .padding(.trailing, UIScreen.main.bounds.size.height * 0.15)
                     
                 }
                 
