@@ -7,12 +7,6 @@ struct MedicineDetails {
     var toBeTaken: String = "After Food"
 }
 
-struct Medicine: Identifiable {
-    let id = UUID()
-    let name: String
-    let details: String
-    var medicineDetails = MedicineDetails()
-}
 
 struct Test: Identifiable {
     let id = UUID()
@@ -43,25 +37,6 @@ struct PrescriptionForm: View {
     @State private var selectedMedicineNames: Set<String> = []
     @State private var selectedTestNames: Set<String> = []
     
-    let medicineList: [Medicine] = [
-        Medicine(name: "Paracetamol", details: "For fever and pain relief"),
-        Medicine(name: "Amoxicillin", details: "Antibiotic for bacterial infections"),
-        Medicine(name: "Lisinopril", details: "For high blood pressure"),
-        Medicine(name: "Partamol", details: "For fever and pain relief"),
-        Medicine(name: "Paracamol", details: "For fever and pain relief"),
-        Medicine(name: "etamol", details: "For fever and pain relief"),
-        Medicine(name: "Psudhikj", details: "For fever and pain relief"),
-        Medicine(name: "tamol", details: "For fever and pain relief")
-        // Add more medicines as needed
-    ]
-    
-    let testList: [Test] = [
-        Test(name: "Blood Test"),
-        Test(name: "X-Ray"),
-        Test(name: "MRI"),
-        Test(name: "CT Scan"),
-        // Add more tests as needed
-    ]
     
     var filteredMedicines: [Medicine] {
         if searchTextMedicine.isEmpty {
