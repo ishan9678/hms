@@ -162,11 +162,9 @@ struct AppointmentView : View {
                             .frame(width: 86.78, height: 96)
                             .background(.white)
                             .cornerRadius(20)
-                            .offset(x: 0, y: 0)
                             Text("\(temp)")
                             .font(Font.custom("SF Pro Display", size: 18).weight(.medium))
                             .foregroundColor(.black)
-                            .offset(x: 3.11, y: -2.50)
                         }
                         .frame(width: 86.78, height: 96)
                         ZStack() {
@@ -175,19 +173,16 @@ struct AppointmentView : View {
                             .frame(width: 249.62, height: 96)
                             .background(.white)
                             .cornerRadius(20)
-                            .offset(x: 0, y: 0)
-                          Text("11:00-12:00 PM")
-                            .font(Font.custom("SF Pro Display", size: 16).weight(.semibold))
-                            .tracking(0.16)
-                            .lineSpacing(21.60)
-                            .foregroundColor(.black)
-                            .offset(x: -43.41, y: -19)
-                          Text("3 Patients")
-                            .font(Font.custom("SF Pro Display", size: 12))
-                            .tracking(0.12)
-                            .lineSpacing(16.20)
-                            .foregroundColor(.black)
-                            .offset(x: -74.93, y: 3)
+                            VStack(alignment: .leading){
+                                Text("11:00-12:00 PM")
+                                  .font(Font.custom("SF Pro Display", size: 16).weight(.semibold))
+                                  .foregroundColor(.black)
+                                  .padding(.bottom)
+                                Text("3 Patients")
+                                  .font(Font.custom("SF Pro Display", size: 12))
+                                  .foregroundColor(.black)
+                            }
+                            .offset(x:-30)
                         }
                         .frame(width: 249.62, height: 96)
                     }
@@ -201,11 +196,10 @@ struct AppointmentView : View {
                             .frame(width: 86.78, height: 96)
                             .background(Color(red: 0.24, green: 0.24, blue: 0.26).opacity(0.36))
                             .cornerRadius(20)
-                            .offset(x: 0, y: 0)
                           Text("\(temp)")
                             .font(Font.custom("SF Pro Display", size: 18).weight(.medium))
                             .foregroundColor(.white)
-                            .offset(x: 3.11, y: -2.50)
+                            
                         }
                         .frame(width: 86.78, height: 96)
                         ZStack() {
@@ -215,18 +209,17 @@ struct AppointmentView : View {
                             .background(Color(red: 0.24, green: 0.24, blue: 0.26).opacity(0.36))
                             .cornerRadius(20)
                             .offset(x: 0, y: 0)
-                          Text("11:00-12:00 PM")
-                            .font(Font.custom("SF Pro Display", size: 16).weight(.semibold))
-                            .tracking(0.16)
-                            .lineSpacing(21.60)
-                            .foregroundColor(.white)
-                            .offset(x: -43.41, y: -19)
-                          Text("3 Patients")
-                            .font(Font.custom("SF Pro Display", size: 12))
-                            .tracking(0.12)
-                            .lineSpacing(16.20)
-                            .foregroundColor(.white)
-                            .offset(x: -74.93, y: 3)
+                            VStack(alignment: .leading){
+                                Text("11:00-12:00 PM")
+                                  .font(Font.custom("SF Pro Display", size: 16).weight(.semibold))
+                                  .foregroundColor(.white)
+                                  .padding(.bottom)
+                                Text("3 Patients")
+                                  .font(Font.custom("SF Pro Display", size: 12))
+                                  .foregroundColor(.white)
+                                 
+                            }
+                            .offset(x:-30)
                         }
                         .frame(width: 249.62, height: 96)
                     }
