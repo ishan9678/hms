@@ -1,10 +1,5 @@
-//
-//  PrescriptionForm.swift
-//  hms
-//
-//  Created by srijan mishra on 23/04/24.
-//
 import SwiftUI
+import FirebaseFirestore
 
 struct MedicineDetails {
     var dosage: Int = 1
@@ -45,6 +40,8 @@ struct PrescriptionForm: View {
     @State private var isEditingMedicine = false
     @State private var isEditingTest = false
     @State private var isEditingDetails = false
+    @State private var selectedMedicineNames: Set<String> = []
+    @State private var selectedTestNames: Set<String> = []
     
     let medicineList: [Medicine] = [
         Medicine(name: "Paracetamol", details: "For fever and pain relief"),
@@ -68,17 +65,17 @@ struct PrescriptionForm: View {
     
     var filteredMedicines: [Medicine] {
         if searchTextMedicine.isEmpty {
-            return medicineList
+            return medicineList.filter { !selectedMedicineNames.contains($0.name) }
         } else {
-            return medicineList.filter { $0.name.lowercased().contains(searchTextMedicine.lowercased()) }
+            return medicineList.filter { $0.name.lowercased().contains(searchTextMedicine.lowercased()) && !selectedMedicineNames.contains($0.name) }
         }
     }
-    
+
     var filteredTests: [Test] {
         if searchTextTest.isEmpty {
-            return testList
+            return testList.filter { !selectedTestNames.contains($0.name) }
         } else {
-            return testList.filter { $0.name.lowercased().contains(searchTextTest.lowercased()) }
+            return testList.filter { $0.name.lowercased().contains(searchTextTest.lowercased()) && !selectedTestNames.contains($0.name) }
         }
     }
     
@@ -212,6 +209,7 @@ struct PrescriptionForm: View {
                             List(filteredMedicines) { medicine in
                                 Button(action: {
                                     self.medicines.append(medicine)
+                                    self.selectedMedicineNames.insert(medicine.name) // Add selected medicine name to set
                                     self.isEditingMedicine = false
                                     self.searchTextMedicine = ""
                                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
@@ -265,7 +263,6 @@ struct PrescriptionForm: View {
                                     HStack {
                                         Text("\(test.name)").bold()
                                         Spacer()
-                                      
                                         Button(action: {
                                             self.tests.removeAll { $0.id == test.id }
                                         }) {
@@ -301,6 +298,51 @@ struct PrescriptionForm: View {
                 Text("Referral")
             }
             
+            Button(action: {
+                // Submit to Firebase
+                let prescriptionData: [String: Any] = [
+                    "symptoms": symptoms,
+                    "diagnosis": diagnosis,
+                    "medicines": medicines.map { medicine in
+                        return [
+                            "name": medicine.name,
+                            "details": medicine.details,
+                            "dosage": medicine.medicineDetails.dosage,
+                            "selectedTimesOfDay": medicine.medicineDetails.selectedTimesOfDay,
+                            "toBeTaken": medicine.medicineDetails.toBeTaken
+                        ]
+                    },
+                    "tests": tests.map { test in
+                        return [
+                            "name": test.name
+                        ]
+                    }
+                    // Add more fields as needed
+                ]
+                
+                // Add prescriptionData to Firebase
+                let db = Firestore.firestore()
+                db.collection("prescriptions").addDocument(data: prescriptionData) { error in
+                    if let error = error {
+                        print("Error adding document: \(error)")
+                    } else {
+                        print("Document added successfully")
+                        // Clear form fields
+                        symptoms = ""
+                        diagnosis = ""
+                        medicines = []
+                        tests = []
+                    }
+                }
+            })
+{
+                Text("Submit")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(8)
+            }
+            
             Spacer()
         }
         .padding()
@@ -315,3 +357,4 @@ struct PrescriptionForm_Previews: PreviewProvider {
         PrescriptionForm()
     }
 }
+
