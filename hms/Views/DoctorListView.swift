@@ -9,10 +9,20 @@ import SwiftUI
 
 struct DoctorCardList: View {
     @ObservedObject var doctorsViewModel = DoctorsViewModel()
-
+    
     var body: some View {
+        VStack{
+            HStack {
+                Text("Find your doctor")
+                    .padding(.leading, 25)
+                    .font(.headline)
+                Spacer()
+                Button("See all") {}
+                    .padding(.trailing, 25)
+                    .font(.headline)
+            }
             ScrollView(.horizontal) {
-                LazyHStack(spacing: 20) {
+                HStack(spacing: 20) {
                     ForEach(doctorsViewModel.doctors, id: \.id) { doctor in
                         VStack(alignment: .leading) {
                             AsyncImage(url: URL(string: doctor.image)) { phase in
@@ -49,6 +59,7 @@ struct DoctorCardList: View {
             }
         }
     }
+}
 
 
 struct DoctorCardList_Previews: PreviewProvider {
