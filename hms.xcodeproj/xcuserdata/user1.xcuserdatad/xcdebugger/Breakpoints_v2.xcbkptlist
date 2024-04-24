@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "93E99296-D1FC-4E26-89FD-B4443CFE208E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "728AC917-2ACD-4CD4-89AE-00E4FF5A7461"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "hms/Views/Auth/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "signUpWithEmailPassword()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "728AC917-2ACD-4CD4-89AE-00E4FF5A7461 - 96e34a0310b4f2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in hms.SignupView.signUpWithEmailPassword() -&gt; ()"
+                  moduleName = "hms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user1/Desktop/HMS/hms/hms/Views/Auth/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "728AC917-2ACD-4CD4-89AE-00E4FF5A7461 - 7162f4f0e2f81e49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in hms.SignupView.signUpWithEmailPassword() -&gt; ()"
+                  moduleName = "hms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user1/Desktop/HMS/hms/hms/Views/Auth/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "728AC917-2ACD-4CD4-89AE-00E4FF5A7461 - e5fc58c45b50832d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in hms.SignupView.signUpWithEmailPassword() -&gt; ()"
+                  moduleName = "hms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user1/Desktop/HMS/hms/hms/Views/Auth/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

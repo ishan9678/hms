@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FCD22C12BD8D3DC006DA51A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C02BD8D3DC006DA51A /* AuthenticationViewModel.swift */; };
+		7FCD22C32BD8D43F006DA51A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C22BD8D43F006DA51A /* AuthenticationView.swift */; };
+		7FCD22C52BD8D453006DA51A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C42BD8D453006DA51A /* LoginView.swift */; };
+		7FCD22C72BD8D480006DA51A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C62BD8D480006DA51A /* SignupView.swift */; };
+		7FCD22C92BD8D4CC006DA51A /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C82BD8D4CC006DA51A /* AdminView.swift */; };
+		7FCD22CB2BD8D4E5006DA51A /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22CA2BD8D4E5006DA51A /* DoctorView.swift */; };
+		7FCD22CD2BD8D51C006DA51A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22CC2BD8D51C006DA51A /* UserProfileView.swift */; };
+		7FCD22CF2BD8D540006DA51A /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22CE2BD8D540006DA51A /* AuthenticatedView.swift */; };
+		7FCD22D12BD8D58F006DA51A /* FavoriteNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22D02BD8D58F006DA51A /* FavoriteNumberView.swift */; };
 		86A6B2EA2BD63BC8005DC851 /* hmsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B2E92BD63BC8005DC851 /* hmsApp.swift */; };
 		86A6B2EC2BD63BC8005DC851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6B2EB2BD63BC8005DC851 /* ContentView.swift */; };
 		86A6B2EE2BD63BC9005DC851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A6B2ED2BD63BC9005DC851 /* Assets.xcassets */; };
@@ -48,6 +57,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FCD22C02BD8D3DC006DA51A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		7FCD22C22BD8D43F006DA51A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		7FCD22C42BD8D453006DA51A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7FCD22C62BD8D480006DA51A /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		7FCD22C82BD8D4CC006DA51A /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		7FCD22CA2BD8D4E5006DA51A /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
+		7FCD22CC2BD8D51C006DA51A /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		7FCD22CE2BD8D540006DA51A /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
+		7FCD22D02BD8D58F006DA51A /* FavoriteNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNumberView.swift; sourceTree = "<group>"; };
 		86A6B2E62BD63BC8005DC851 /* hms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A6B2E92BD63BC8005DC851 /* hmsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmsApp.swift; sourceTree = "<group>"; };
 		86A6B2EB2BD63BC8005DC851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +118,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FCD22BF2BD8D34E006DA51A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7FCD22C02BD8D3DC006DA51A /* AuthenticationViewModel.swift */,
+				7FCD22C22BD8D43F006DA51A /* AuthenticationView.swift */,
+				7FCD22CE2BD8D540006DA51A /* AuthenticatedView.swift */,
+				7FCD22C42BD8D453006DA51A /* LoginView.swift */,
+				7FCD22C62BD8D480006DA51A /* SignupView.swift */,
+				7FCD22C82BD8D4CC006DA51A /* AdminView.swift */,
+				7FCD22CA2BD8D4E5006DA51A /* DoctorView.swift */,
+				7FCD22CC2BD8D51C006DA51A /* UserProfileView.swift */,
+				7FCD22D02BD8D58F006DA51A /* FavoriteNumberView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		86A6B2DD2BD63BC8005DC851 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +177,7 @@
 				8E7730762BD6BFC800EE1DA2 /* DateCalendarView.swift */,
 				8E7730842BD7C95800EE1DA2 /* PrescriptionForm.swift */,
 				86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */,
+				7FCD22BF2BD8D34E006DA51A /* Auth */,
 				86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */,
 				86A6B3432BD7AE39005DC851 /* AppointmentCardView.swift */,
 				86A6B3472BD7DBC6005DC851 /* BookAppointmentView.swift */,
@@ -277,16 +312,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCD22C72BD8D480006DA51A /* SignupView.swift in Sources */,
+				7FCD22CB2BD8D4E5006DA51A /* DoctorView.swift in Sources */,
 				86A6B3442BD7AE39005DC851 /* AppointmentCardView.swift in Sources */,
 				8E7730772BD6BFC800EE1DA2 /* DateCalendarView.swift in Sources */,
+				7FCD22CF2BD8D540006DA51A /* AuthenticatedView.swift in Sources */,
+				7FCD22C32BD8D43F006DA51A /* AuthenticationView.swift in Sources */,
 				86A6B3482BD7DBC6005DC851 /* BookAppointmentView.swift in Sources */,
 				86A6B33E2BD7A8BB005DC851 /* DoctorListView.swift in Sources */,
+				7FCD22C12BD8D3DC006DA51A /* AuthenticationViewModel.swift in Sources */,
 				86A6B2EC2BD63BC8005DC851 /* ContentView.swift in Sources */,
 				86A6B3332BD63D7B005DC851 /* Doctors.swift in Sources */,
+				7FCD22CD2BD8D51C006DA51A /* UserProfileView.swift in Sources */,
 				86A6B2EA2BD63BC8005DC851 /* hmsApp.swift in Sources */,
 				86A6B3402BD7A8DB005DC851 /* PatientHomeView.swift in Sources */,
+				7FCD22C52BD8D453006DA51A /* LoginView.swift in Sources */,
+				7FCD22D12BD8D58F006DA51A /* FavoriteNumberView.swift in Sources */,
 				86A6B3352BD63DAD005DC851 /* DoctorsViewModel.swift in Sources */,
 				8E7730852BD7C95800EE1DA2 /* PrescriptionForm.swift in Sources */,
+				7FCD22C92BD8D4CC006DA51A /* AdminView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
