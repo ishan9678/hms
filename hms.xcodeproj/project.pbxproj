@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9CDB882BD9089800567647 /* AddDoctorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CDB872BD9089800567647 /* AddDoctorsViewModel.swift */; };
+		1F9CDB8A2BD908A200567647 /* AddDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CDB892BD908A200567647 /* AddDoctorView.swift */; };
 		7FCD22C12BD8D3DC006DA51A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C02BD8D3DC006DA51A /* AuthenticationViewModel.swift */; };
 		7FCD22C32BD8D43F006DA51A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C22BD8D43F006DA51A /* AuthenticationView.swift */; };
 		7FCD22C52BD8D453006DA51A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD22C42BD8D453006DA51A /* LoginView.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F9CDB872BD9089800567647 /* AddDoctorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoctorsViewModel.swift; sourceTree = "<group>"; };
+		1F9CDB892BD908A200567647 /* AddDoctorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoctorView.swift; sourceTree = "<group>"; };
 		7FCD22C02BD8D3DC006DA51A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		7FCD22C22BD8D43F006DA51A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		7FCD22C42BD8D453006DA51A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				8E7730B12BD9137300EE1DA2 /* TestsList.swift */,
 				8E7730AF2BD908A000EE1DA2 /* MedicineList.swift */,
 				86A6B33D2BD7A8BB005DC851 /* DoctorListView.swift */,
+				1F9CDB892BD908A200567647 /* AddDoctorView.swift */,
 				7FCD22BF2BD8D34E006DA51A /* Auth */,
 				86A6B33F2BD7A8DB005DC851 /* PatientHomeView.swift */,
 				86A6B3432BD7AE39005DC851 /* AppointmentCardView.swift */,
@@ -192,6 +197,7 @@
 		86A6B32C2BD63CA8005DC851 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1F9CDB872BD9089800567647 /* AddDoctorsViewModel.swift */,
 				86A6B3342BD63DAD005DC851 /* DoctorsViewModel.swift */,
 			);
 			path = ViewModels;
@@ -310,9 +316,11 @@
 				7FCD22CF2BD8D540006DA51A /* AuthenticatedView.swift in Sources */,
 				7FCD22C32BD8D43F006DA51A /* AuthenticationView.swift in Sources */,
 				86A6B3482BD7DBC6005DC851 /* BookAppointmentView.swift in Sources */,
+				1F9CDB882BD9089800567647 /* AddDoctorsViewModel.swift in Sources */,
 				86A6B33E2BD7A8BB005DC851 /* DoctorListView.swift in Sources */,
 				7FCD22C12BD8D3DC006DA51A /* AuthenticationViewModel.swift in Sources */,
 				86A6B2EC2BD63BC8005DC851 /* ContentView.swift in Sources */,
+				1F9CDB8A2BD908A200567647 /* AddDoctorView.swift in Sources */,
 				86A6B3332BD63D7B005DC851 /* Doctors.swift in Sources */,
 				8E7730B02BD908A000EE1DA2 /* MedicineList.swift in Sources */,
 				7FCD22CD2BD8D51C006DA51A /* UserProfileView.swift in Sources */,

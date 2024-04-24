@@ -25,30 +25,18 @@ struct DoctorCardList: View {
                 HStack(spacing: 20) {
                     ForEach(doctorsViewModel.doctors, id: \.id) { doctor in
                         VStack(alignment: .leading) {
-                            AsyncImage(url: URL(string: doctor.image)) { phase in
-                                switch phase {
-                                case .empty:
-                                    ProgressView()
-                                case .success(let image):
-                                    image
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: 130, height: 130)
-                                        .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
-                                    Text(doctor.name)
-                                        .font(.headline)
-                                    Text(doctor.department)
-                                        .font(.subheadline)
-                                case .failure:
-                                    Image(systemName: "person.fill")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                @unknown default:
-                                    EmptyView()
-                                }
-                            }
+                                               Text(doctor.fullName)
+                                                   .font(.headline)
+                                                   .frame(width: 130, height: 130)
+                                                   .background(Color.gray)
+                                                   .clipShape(RoundedRectangle(cornerRadius: 25))
+                                                   .foregroundColor(.white)
+                                                   .padding(.bottom, 5)
+
+                                               Text(doctor.department)
+                                                   .font(.subheadline)
+                                                   .foregroundColor(.secondary)
                         }
-                        .padding(.vertical)
                     }
                 }
                 .padding(.horizontal)
