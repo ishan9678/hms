@@ -25,17 +25,17 @@ struct DoctorCardList: View {
                 HStack(spacing: 20) {
                     ForEach(doctorsViewModel.doctors, id: \.id) { doctor in
                         VStack(alignment: .leading) {
-                                               Text(doctor.fullName)
-                                                   .font(.headline)
-                                                   .frame(width: 130, height: 130)
-                                                   .background(Color.gray)
-                                                   .clipShape(RoundedRectangle(cornerRadius: 25))
-                                                   .foregroundColor(.white)
-                                                   .padding(.bottom, 5)
+                            Text(doctor.fullName)
+                                .font(.headline)
+                                .frame(width: 130, height: 130)
+                                .background(Color.gray)
+                                .clipShape(RoundedRectangle(cornerRadius: 25))
+                                .foregroundColor(.white)
+                                .padding(.bottom, 5)
 
-                                               Text(doctor.department)
-                                                   .font(.subheadline)
-                                                   .foregroundColor(.secondary)
+                            Text(doctor.department)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
                         }
                     }
                 }
